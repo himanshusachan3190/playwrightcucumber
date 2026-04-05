@@ -1,0 +1,99 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-eastmanpf-portal;eastmanpf-myaccount-login",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "EastmanPF MyAccount Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 321557399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "lets open the eastmanpf stage environment from env file",
+            "match": {
+              "location": "src\\features\\step_definitions\\career-portal.steps.js:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2040581100,
+              "error_message": "page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://stage.eastmanpf.com/\", waiting until \"load\"\u001b[22m\n\n    at CareerPortal.open (E:\\playright\\playwrightcucumber\\src\\features\\pages\\careerportal.js:23:23)\n    at World.<anonymous> (E:\\playright\\playwrightcucumber\\src\\features\\step_definitions\\career-portal.steps.js:13:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "lets stage login with validUser user from env file",
+            "match": {
+              "location": "src\\features\\step_definitions\\career-portal.steps.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "lets login with \"validUser\" user from json file",
+            "match": {
+              "location": "src\\features\\step_definitions\\career-portal.steps.js:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "logout the EastmanPF portal",
+            "match": {
+              "location": "src\\features\\step_definitions\\career-portal.steps.js:64"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 3719700,
+              "error_message": "page.screenshot: Target page, context or browser has been closed\n    at captureScreenshot (E:\\playright\\playwrightcucumber\\src\\features\\support\\hooks.js:72:21)\n    at World.<anonymous> (E:\\playright\\playwrightcucumber\\src\\features\\support\\hooks.js:119:11)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity1",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-eastmanpf-portal",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to EastmanPF Portal",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
